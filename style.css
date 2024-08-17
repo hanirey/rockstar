@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 770px;
+  overflow: hidden;
+}
+.header-bg {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 780px;
+  top: 0;
+  right: 0;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(#fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38rem;
+  margin-top: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: headerTextAnim 3s ease-out 3s 1 normal forwards;
+}
+
+@keyframes headerTextAnim {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: auto;
+  }
+}
+
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("img/lisa.png") no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+  animation: headerImgAnim 3s ease-in 6s 1 normal backwards;
+}
+@keyframes headerImgAnim {
+  0%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+  }
+
+  20%,
+  50%,
+  70%,
+  90%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.sec-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  transform: translateX(-50%);
+  font-size: 8.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 0;
+  text-align: center;
+  text-wrap: nowrap;
+  transform-origin: right center;
+  animation: headerAnim 3s linear 0s 1 normal forwards;
+}
+@keyframes headerAnim {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.sec-text2 {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  transform: translateX(50%);
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 8.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+  transform-origin: left center;
+  animation: headerAnim 3s linear 0s 1 normal forwards;
+}
+
+.main1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  background: #000;
+}
+
+.chrome-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg); /* Combine centering and rotation */
+  background: url("img/starlogo.png") no-repeat center center;
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  z-index: 1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.chrome-logo2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("img/chrome2.webp") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  width: 60rem;
+  height: 30rem;
+  z-index: 0;
+}
+
+.main2 {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("img/lisa2.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.content1,
+.content3 {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background: linear-gradient(
+    to left,
+    rgba(133, 79, 63, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  width: 80%;
+  height: 25%;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.content2 {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background: linear-gradient(
+    to right,
+    rgba(133, 79, 63, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  width: 80%;
+  height: 25%;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: 0; /* Align right */
+}
+
+.content1 {
+  margin-bottom: 3rem;
+}
+
+.main2-b {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 700px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 30em;
+  height: 30em;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: -1px 0 0 0 #fff, 1px 0 0 0 #fff;
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.main2-b-left {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.main2-b-left h1 {
+  background: transparent;
+  color: #fff;
+  font-size: 4rem;
+  text-align: left;
+}
+.main2-b-left p {
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.main2-b-right h1 {
+  background: transparent;
+  color: #fff;
+  font-size: 4rem;
+  text-align: left;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  text-wrap: wrap;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media (max-width: 1300px) {
+  .main2-b {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    height: auto;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    margin-top: 3rem;
+    margin-top: 3rem;
+  }
+
+  .main2-b-left,
+  .main2-b-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  .main2-b-left h1,
+  .main2-b-right h1 {
+    font-size: 5rem;
+  }
+
+  .main2-b-left p {
+    font-size: 1rem;
+  }
+
+  .main2-b-left h1 {
+    text-align: center;
+  }
+  .main2-b-left p {
+    text-align: center;
+  }
+
+  .main2-b-right h1 {
+    writing-mode: horizontal-tb;
+    text-align: center;
+    transform: rotate(0); /* Remove rotation */
+  }
+}
