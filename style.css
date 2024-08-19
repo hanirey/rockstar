@@ -383,15 +383,21 @@ video {
   }
 }
 
-@media (max-width: 1299px) and (min-width: 800px) {
+@media (max-width: 1299px)  {
   .remove {
     display: inline-block !important;
   }
   .main2-b-right h1 {
     text-wrap: nowrap;
+    font-size: 10vw !important;
+
   }
-  .main2-b-left {
-    font-size: 1.5rem !important;
+
+  .main2-b-left p{
+   font-size: 2vw !important;
+  }
+  .main2-b-left h1{
+    font-size: 10vw !important;
   }
 }
 
@@ -560,6 +566,13 @@ top: 10%;
   -webkit-text-stroke-color: #fff;
 }
 
+pre{
+ background: transparent;
+ color: #fff;
+ font-weight: bold;
+}
+
+
 @media (max-width: 1350px) {
  .lyrics-left .two, .one{
  display: none;
@@ -567,6 +580,7 @@ top: 10%;
 .lyrics-container{
  flex-direction: column;
  height: auto;
+ 
 }
 
 .lyrics-container br{
@@ -575,10 +589,17 @@ top: 10%;
 
 .lyrics-left {
  text-align: center;
- font-size: 5rem;
+ font-size: 10vw;
   writing-mode: horizontal-tb; 
   transform: rotate(360deg); 
 }
+pre{
+ background: transparent;
+ color: #fff;
+ font-weight: bold;
+ font-size: 2vw;
+}
+
 
 }
 
@@ -593,16 +614,11 @@ top: 10%;
   
 }
 
-pre{
- background: transparent;
- color: #fff;
- font-weight: bold;
-}
 
 footer{
  width: 100%;
  height: 80px;
- padding: 5rem;
+ padding: 6rem;
  display: flex;
  justify-content: center;
  text-align: center;
