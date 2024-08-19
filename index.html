@@ -53,6 +53,49 @@
       <div class="content3"></div>
     </div>
 
+    <div class="lyrics-container">
+      <div class="lyrics-left">
+        <h1 class="one">LYRICS</h1>
+        <br>
+        <h1 class="two">LYRICS</h1>
+        <br>
+        <h1 class="three">LYRICS</h1>
+      </div>
+      <div class="lyrics-right">
+        <pre>
+  Gold teeth sittin' on the dash, she a rockstar
+  Make your favorite singer wanna rap, baby, la, la
+  "Lisa, can you teach me Japanese?" I said「はい、はい」
+  That's my life, life, baby, I'm a rockstar
+
+  [Pre-Chorus]
+  Been on a mission, boy, they call me catch-and-kill
+  I'm stealin' diamonds, make them chase me for the thrill
+  Been MIA, BKK so pretty
+  Every city that I go is my city
+
+  [Chorus]
+  Gold teeth sittin' on the dash, she a rockstar
+  Make your favorite singer wanna rap, baby, la, la
+  "Lisa, can you teach me Japanese?" I said「はい、はい」
+  That's my life, life, baby, I'm a rockstar
+
+  [Post-Chorus]
+  I'm a rockstar, I'm a rockstar
+  It's not hype, hype, baby, make you rock-hard
+
+  [Verse]
+  Make a wish, babe, what you wanna do?
+  Dippin' outta big cities like a ponzu
+  It's a fast life, it's an attitude
+  Put it on the calеndar and tell me when to comе through
+  Yes, yes, I can spend it
+  Yes, yes, no pretendin'
+  Tight dress, LV sent it
+  Oh shit, Lisa reppin'</pre>
+      </div>
+    </div>
+
     <div class="lisa">
       <div class="img1" data-aos="zoom-in"></div>
       <div class="img2" data-aos="fade-left" data-aos-duration="1000"></div>
@@ -70,12 +113,31 @@
       <div class="chrome-logo"></div>
       <div class="chrome-logo2"></div>
     </div>
-    <script>
-  AOS.init();
-</script>
-    <script src="aos-master/dist/aos.js"></script>
+    <footer class="footer">
+    <p>&copy; 2024 Reyes, Hannah | Web Developer. All rights reserved. Designed and Developed by <a href="#" target="_blank">DEV RYS</a></p>
+  </footer>
+
   </body>
-  
+  <script src="aos-master/dist/aos.js"></script>
 </html>
 
+<script>
+  AOS.init();
+</script>
 
+<script>
+
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 123 || // F12
+        (event.ctrlKey && event.shiftKey && event.keyCode === 73) || // Ctrl+Shift+I
+        (event.ctrlKey && event.shiftKey && event.keyCode === 74) || // Ctrl+Shift+J
+        (event.ctrlKey && event.keyCode === 85) || // Ctrl+U
+        (event.ctrlKey && event.keyCode === 83)) { // Ctrl+S
+      event.preventDefault();
+    }
+  });
+</script>
